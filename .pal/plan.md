@@ -59,6 +59,6 @@ A warm, friendly medical advisory platform where patients can share their health
 
 ## Tech Approach
 - Supabase backend for storing patient data and reports
-- Lovable AI for intelligent conversation and report generation
+- AI for intelligent conversation and report generation
 - ElevenLabs for voice interaction (speech-to-text + text-to-speech)
 - Warm color theme applied globally via Tailwind CSS variables

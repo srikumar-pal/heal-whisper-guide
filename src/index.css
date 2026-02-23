@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 30% 98%;
+    --foreground: 200 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 15%;
+
+    --primary: 174 55% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 30% 93%;
+    --secondary-foreground: 200 25% 15%;
+
+    --muted: 160 20% 95%;
+    --muted-foreground: 200 10% 50%;
+
+    --accent: 16 80% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 20% 88%;
+    --input: 160 20% 88%;
+    --ring: 174 55% 40%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 160 30% 97%;
+    --sidebar-foreground: 200 25% 25%;
+    --sidebar-primary: 174 55% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 30% 93%;
+    --sidebar-accent-foreground: 200 25% 15%;
+    --sidebar-border: 160 20% 90%;
+    --sidebar-ring: 174 55% 40%;
+
+    --warm-gradient: linear-gradient(135deg, hsl(174 55% 40%), hsl(174 55% 50%));
+    --coral-gradient: linear-gradient(135deg, hsl(16 80% 68%), hsl(16 80% 58%));
+    --soft-shadow: 0 4px 24px -4px hsl(174 55% 40% / 0.12);
+    --card-shadow: 0 2px 16px -2px hsl(200 25% 15% / 0.06);
+  }
+
+  .dark {
+    --background: 200 25% 8%;
+    --foreground: 160 20% 95%;
+
+    --card: 200 25% 12%;
+    --card-foreground: 160 20% 95%;
+
+    --popover: 200 25% 12%;
+    --popover-foreground: 160 20% 95%;
+
+    --primary: 174 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 18%;
+    --secondary-foreground: 160 20% 95%;
+
+    --muted: 200 20% 18%;
+    --muted-foreground: 160 15% 60%;
+
+    --accent: 16 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 35%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 20%;
+    --input: 200 20% 20%;
+    --ring: 174 55% 45%;
+
+    --sidebar-background: 200 25% 10%;
+    --sidebar-foreground: 160 20% 90%;
+    --sidebar-primary: 174 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 20% 16%;
+    --sidebar-accent-foreground: 160 20% 95%;
+    --sidebar-border: 200 20% 18%;
+    --sidebar-ring: 174 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer utilities {
+  .warm-gradient {
+    background: var(--warm-gradient);
+  }
+  .coral-gradient {
+    background: var(--coral-gradient);
+  }
+  .soft-shadow {
+    box-shadow: var(--soft-shadow);
+  }
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+}
